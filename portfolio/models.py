@@ -51,8 +51,8 @@ class Investment(models.Model):
     def results_by_investment(self):
         return self.recent_value - self.acquired_value
 
-        def cust_number(self):
-            return self.customer.cust_number
+    def cust_number(self):
+        return self.customer.cust_number
 
 
 class Stock(models.Model):
